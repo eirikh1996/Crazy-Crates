@@ -195,7 +195,7 @@ public class StructureService {
         Method parseAndConvert = DefinedStructureManager.class.getDeclaredMethod("a", InputStream.class);
         parseAndConvert.setAccessible(true);
         // 1.13 WorldServer#C, 1.13.1 WorldServer#D
-        return (DefinedStructure) parseAndConvert.invoke(((CraftWorld) world).getHandle().r(), new FileInputStream(source));
+        return (DefinedStructure) parseAndConvert.invoke(((CraftWorld) world).getHandle().p(), new FileInputStream(source));
     }
     
     /**
