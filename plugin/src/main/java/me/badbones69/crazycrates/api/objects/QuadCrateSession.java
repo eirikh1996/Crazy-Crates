@@ -97,6 +97,7 @@ public class QuadCrateSession {
             crateSessions.remove(instance);
             return false;
         }
+        //Check for schematics
         if (cc.getCrateSchematics().isEmpty()) {
             player.sendMessage(Messages.NO_SCHEMATICS_FOUND.getMessage());
             return false;
